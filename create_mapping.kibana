@@ -1,0 +1,29 @@
+PUT my_index
+{
+   "settings": {
+      "analysis": {
+         "analyzer": {
+            "my_analyzer": {
+               "type": "custom",
+               "filter": [
+                  "lowercase"
+               ],
+               "tokenizer": "whitespace"
+            }
+         }
+      }
+   },
+   "mappings": {
+   "vacancies": {
+      "properties": {
+        "location": {
+          "type": "geo_point"
+        },
+        "description": {
+         "type": "text",
+         "analyzer": "my_analyzer"
+      	}
+      }
+    }
+  }
+}
