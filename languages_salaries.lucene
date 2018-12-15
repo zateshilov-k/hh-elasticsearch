@@ -6,7 +6,7 @@
 
 ((description: *Python* Django) OR (branded_description:  *Python* Django))
 
-((description: *PHP*) OR (branded_description:  PHP) )
+((description: *PHP*) OR (branded_description:  PHP))
 
 ((description: *Scala* ) OR (branded_desctription: *Scala* )) 
 
@@ -27,4 +27,25 @@ msc (area.id:1)
 spb (area.id:2)
 other (NOT(area.id:2)) AND (NOT(area.id:1))
 
-24887
+
+ 
+Frontend  description:(Фронтенд~  Frontend~ *Javascript*  *Angular* *React*  *Vue*)  AND (_exists_:salary.from) AND (salary.currency:"RUR") AND (specializations.profarea_id:1)
+
+Backend   (description: *Spring*  *Hibernate* backend~ бэкенд~) AND (_exists_:salary.from) AND (salary.currency:"RUR") AND (specializations.profarea_id:1)
+
+Fullstack (description: Fullstack~ OR Фуллстэк~ OR (frontend~1 AND backend~1)) AND (_exists_:salary.from) AND (salary.currency:"RUR") AND (specializations.profarea_id:1)
+
+Game developer                  (specializations.id:"1.475") 
+
+embeded dev  (description: embedded* встраиваемая~ ARM  STM AVR UART ПЛИС Verilog)    AND (_exists_:salary.from) AND (salary.currency:"RUR") AND (specializations.profarea_id:1)
+
+desktop dev  (description: QT  desktop  десктопные~1  WinForm Swing~1)  AND (_exists_:salary.from) AND (salary.currency:"RUR") AND (specializations.profarea_id:1)
+
+mobile developer (description: *Android* IOS)  AND (_exists_:salary.from) AND (salary.currency:"RUR") AND (specializations.id:"1.221")
+
+Архитектор ПО
+
+
+
+
+AND (_exists_:salary.from) AND (salary.currency:"RUR") AND (specializations.profarea_id:1)
