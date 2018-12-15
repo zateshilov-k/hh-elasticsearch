@@ -1,0 +1,30 @@
+((description:  *Java* Spring -Javascript)  OR (branded_description:  *Java* Spring -Javascript))
+
+(description:  *C#*  *.NET* -VB.NET) 
+
+(description: *C++* STL Boost)
+
+((description: *Python* Django) OR (branded_description:  *Python* Django))
+
+((description: *PHP*) OR (branded_description:  PHP) )
+
+((description: *Scala* ) OR (branded_desctription: *Scala* )) 
+
+((description: *Perl* ) OR (branded_desctription: *Perl* ))
+
+((description: *1C* ) OR (branded_desctription: *1C* ))
+AND (_exists_:salary.from) AND (salary.currency:"RUR") AND ((specializations.id:"1.221" ) OR (specializations.id:"1.9") OR (specializations.id:"1.82") OR (specializations.id:"1.117") OR (specializations.id:"1.536") OR (specializations.id:"1.420")) 
+
+
+
+((description: *Javascript* -Java ) OR (branded_desctription: *Javascript* -Java ))
+
+AND (_exists_:salary.from) AND (salary.currency:"RUR") AND (specializations.profarea_id:1)
+
+
+
+msc (area.id:1)
+spb (area.id:2)
+other (NOT(area.id:2)) AND (NOT(area.id:1))
+
+24887

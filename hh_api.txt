@@ -1,0 +1,304 @@
+График работы:
+schedule	
+	0	
+	id	"fullDay"
+	name	"Полный день"
+	1	
+	id	"shift"
+	name	"Сменный график"
+	2	
+	id	"flexible"
+	name	"Гибкий график"
+	3	
+	id	"remote"
+	name	"Удаленная работа"
+	4	
+	id	"flyInFlyOut"
+	name	"Вахтовый метод"
+
+
+Требуемый опыт работы : 
+experience	
+	0	
+	id	"noExperience"
+	name	"Нет опыта"
+	1	
+	id	"between1And3"
+	name	"От 1 года до 3 лет"
+	2	
+	id	"between3And6"
+	name	"От 3 до 6 лет"
+	3	
+	id	"moreThan6"
+	name	"Более 6 лет"
+
+Адрес вакансии :
+address
+{
+    "city": "Москва",
+    "street": "улица Годовикова",
+}
+
+Тип занятости :
+employment	
+	0	
+	id	"full"
+	name	"Полная занятость"
+	1	
+	id	"part"
+	name	"Частичная занятость"
+	2	
+	id	"project"
+	name	"Проектная работа"
+	3	
+	id	"volunteer"
+	name	"Волонтерство"
+	4	
+	id	"probation"
+	name	"Стажировка"
+
+Идентификатор валюты оклада :
+currency:
+	0	
+	code	"AZN"
+	abbr	"AZN"
+	name	"Манаты"
+	default	false
+	rate	0.025537
+	in_use	false
+	1	
+	code	"BYR"
+	abbr	"бел. руб."
+	name	"Белорусские рубли"
+	default	false
+	rate	0.031919
+	in_use	false
+	2	
+	code	"EUR"
+	abbr	"EUR"
+	name	"Евро"
+	default	false
+	rate	0.013265
+	in_use	true
+	3	
+	code	"GEL"
+	abbr	"GEL"
+	name	"Грузинский лари"
+	default	false
+	rate	0.0344
+	in_use	false
+	4	
+	code	"KGS"
+	abbr	"KGS"
+	name	"Киргизский сом"
+	default	false
+	rate	1.050672
+	in_use	false
+	5	
+	code	"KZT"
+	abbr	"KZT"
+	name	"Тенге"
+	default	false
+	rate	5.590246
+	in_use	false
+	6	
+	code	"RUR"
+	abbr	"руб."
+	name	"Рубли"
+	default	true
+	rate	1
+	in_use	true
+	7	
+	code	"UAH"
+	abbr	"грн."
+	name	"Гривны"
+	default	false
+	rate	0.418913
+	in_use	false
+	8	
+	code	"USD"
+	abbr	"USD"
+	name	"Доллары"
+	default	false
+	rate	0.015053
+	in_use	true
+	9	
+	code	"UZS"
+	abbr	"UZS"
+	name	"Узбекский сум"
+	default	false
+	rate	124.805927
+	in_use	false
+
+Регион размещения вакансии :
+area
+	area.id 	string 	Идентификатор региона
+	area.name 	string 	Название региона
+
+Санкт-Петербург area.id:2
+Москва area.id:1
+
+
+Короткое представление работодателя: 
+employer
+{
+    "name": "HeadHunter",
+    "id" : "1455",
+}
+
+
+
+specialization 	array 	Специализации. Элементы справочника specializations
+specializations[].id 	string 	Идентификатор специализации
+specializations[].name 	string 	Название специализации
+specializations[].profarea_id 	string 	Идентификатор профессиональной области, в которую входит специализация
+specializations[].profarea_name 	string 	Название профессиональной области, в которую входит специализация
+	
+id	"1"
+name	"Информационные технологии, интернет, телеком"
+	specializations	
+	0	
+	id	"1.395"
+	name	"Банковское ПО"
+	laboring	false
+	1	
+	id	"1.400"
+	name	"Оптимизация сайта (SEO)"
+	laboring	false
+	2	
+	id	"1.420"
+	name	"Администратор баз данных"
+	laboring	false
+	3	
+	id	"1.474"
+	name	"Стартапы"
+	laboring	false
+	4	
+	id	"1.475"
+	name	"Игровое ПО"
+	laboring	false
+	5	
+	id	"1.536"
+	name	"CRM системы"
+	laboring	false
+	6	
+	id	"1.3"
+	name	"CTO, CIO, Директор по IT"
+	laboring	false
+	7	
+	id	"1.9"
+	name	"Web инженер"
+	laboring	false
+	8	
+	id	"1.10"
+	name	"Web мастер"
+	laboring	false
+	9	
+	id	"1.25"
+	name	"Аналитик"
+	laboring	false
+	10	
+	id	"1.30"
+	name	"Арт-директор"
+	laboring	false
+	11	
+	id	"1.50"
+	name	"Системы управления предприятием (ERP)"
+	laboring	false
+	12	
+	id	"1.82"
+	name	"Инженер"
+	laboring	false
+	13	
+	id	"1.89"
+	name	"Интернет"
+	laboring	false
+	14	
+	id	"1.110"
+	name	"Компьютерная безопасность"
+	laboring	false
+	15	
+	id	"1.113"
+	name	"Консалтинг, Аутсорсинг"
+	laboring	false
+	16	
+	id	"1.116"
+	name	"Контент"
+	laboring	false
+	17	
+	id	"1.117"
+	name	"Тестирование"
+	laboring	false
+	18	
+	id	"1.137"
+	name	"Маркетинг"
+	laboring	false
+	19	
+	id	"1.161"
+	name	"Мультимедиа"
+	laboring	false
+	20	
+	id	"1.172"
+	name	"Начальный уровень, Мало опыта"
+	laboring	false
+	21	
+	id	"1.203"
+	name	"Передача данных и доступ в интернет"
+	laboring	false
+	22	
+	id	"1.211"
+	name	"Поддержка, Helpdesk"
+	laboring	false
+	23	
+	id	"1.221"
+	name	"Программирование, Разработка"
+	laboring	false
+	24	
+	id	"1.225"
+	name	"Продажи"
+	laboring	false
+	25	
+	id	"1.232"
+	name	"Продюсер"
+	laboring	false
+	26	
+	id	"1.246"
+	name	"Развитие бизнеса"
+	laboring	false
+	27	
+	id	"1.270"
+	name	"Сетевые технологии"
+	laboring	false
+	28	
+	id	"1.272"
+	name	"Системная интеграция"
+	laboring	false
+	29	
+	id	"1.273"
+	name	"Системный администратор"
+	laboring	false
+	30	
+	id	"1.274"
+	name	"Системы автоматизированного проектирования"
+	laboring	false
+	31	
+	id	"1.277"
+	name	"Сотовые, Беспроводные технологии"
+	laboring	false
+	32	
+	id	"1.295"
+	name	"Телекоммуникации"
+	laboring	false
+	33	
+	id	"1.296"
+	name	"Технический писатель"
+	laboring	false
+	34	
+	id	"1.327"
+	name	"Управление проектами"
+	laboring	false
+	35	
+	id	"1.359"
+	name	"Электронная коммерция"
+	laboring	false
+
